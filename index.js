@@ -3,13 +3,14 @@ const xhr = require('xhr')
 patchworkDownloader()
 
 function patchworkDownloader () {
-  const platformEl = document.querySelector('main .platform')
-  const versionEl = document.querySelector('main .version')
-  const urlEl = document.querySelector('main .url')
-  const assetEl = document.querySelector('main .asset')
+  const platformEl = document.querySelector('.main .platform')
+  const versionEl = document.querySelector('.main .version')
+  const latestEl = document.querySelector('.main .latest')
+  const downloadEl = document.querySelector('.main .download')
 
   const platform = getPlatform(navigator.platform)
   console.log('platform', platform)
+
   platformEl.textContent = platform
 
   getLatestRelease(function (err, release) {
@@ -18,10 +19,8 @@ function patchworkDownloader () {
     console.log('release', release)
 
     versionEl.textContent = release.version
-    urlEl.textContent = release.url
-    urlEl.href = release.url
-    assetEl.textContent = release.assets[platform]
-    assetEl.href = release.assets[platform]
+    latestEl.href = release.url
+    downloadEl.href = release.assets[platform]
   })
 }
 

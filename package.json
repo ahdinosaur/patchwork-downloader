@@ -6,7 +6,7 @@
   "scripts": {
     "start": "budo . -d --serve bundle.js --live",
     "build": "browserify . -o bundle.js -g uglifyify",
-    "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
+    "dist": "mkdir -p dist && bash -c 'cp -r images *.{js,html,css} dist'",
     "push": "gh-pages -d dist",
     "deploy": "npm run build && npm run dist && npm run push",
     "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",

@@ -1,3 +1,91 @@
-main {
-  text-align: center;
+body{
+	font-family: 'SourceCodeProRegular';
+	font-weight: lighter;
+	font-style: normal;
+	font-size: 16px;
+	margin: 20px; }
+
+.title{
+	font-size: 2.5em; 
+	color: #48a47d; 
+	letter-spacing: 3px;
+	font-weight: 200; 
+	margin-top: 40px;
+	margin-bottom: 10px;
+        text-transform: uppercase;
+}
+
+h2{
+	margin-top: 10px;
+    font-size: 1.3em;
+    color; #202329; 
+    font-weight: lighter; }
+
+.main{
+    max-width: 960px;
+    margin: auto; 
+    text-align: center;}
+
+		
+.logo{
+	max-width: 50%;
+	display: block;
+	margin: auto; }
+	
+a{
+	color: inherit;
+	font-size: 1.4em;
+	font-weight: light;
+	text-decoration: none; }
+		
+.link-box{
+	max-width: 250px;
+	text-align: center; 
+	margin: auto;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+	
+.link-button{
+	background-color: #015249;
+	color: white;
+	padding: 10px; }
+		
+.caption{
+	font-size: 0.8em;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-style: italic; }
+
+.accent-text{
+	color: #77c9d4;
+	font-weight: bold;
+	font-style: normal; }	
+	
+.invite-code{
+	font-family: 'FantasqueSansMonoRegular';
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 1.1em;
+	line-height: 1.3em; }
+
+.gif{ 
+	max-width: 600px; 
+	display: block;
+	margin: auto; 
+	margin-top: 40px;
+	margin-bottom: 40px;
+	-webkit-filter: drop-shadow(2px 2px 2px #a5a5af);
+    filter: drop-shadow(2px 2px 2px #a5a5af); }
+    
+.closer{
+	margin-top: 10px;
+}
+
+.closing-remarks{
+	margin-top: 60px;
+	margin-bottom: 60px; }
+
+.platform {
+  text-transform: capitalize;
 }

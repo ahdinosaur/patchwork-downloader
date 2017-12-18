@@ -5,10 +5,11 @@ patchworkDownloader()
 function patchworkDownloader () {
   const platformEl = document.querySelector('.main .platform')
   const versionEl = document.querySelector('.main .version')
-  const latestEl = document.querySelector('.main .latest')
+  const latestEls = document.querySelectorAll('.main .latest')
   const downloadEl = document.querySelector('.main .download')
 
   const platform = getPlatform(navigator.platform)
+
   console.log('platform', platform)
 
   platformEl.textContent = platform
@@ -19,7 +20,9 @@ function patchworkDownloader () {
     console.log('release', release)
 
     versionEl.textContent = release.version
-    latestEl.href = release.url
+    latestEls.forEach(latestEl => {
+      latestEl.href = release.url
+    })
     downloadEl.href = release.assets[platform]
   })
 }

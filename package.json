@@ -34,11 +34,11 @@
   "homepage": "https://github.com/ahdinosaur/patchwork-downloader#readme",
   "devDependencies": {
     "browserify": "^14.5.0",
-    "budo": "^10.0.4",
+    "budo": "^11.8.4",
     "dependency-check": "^2.7.0",
     "gh-pages": "^1.1.0",
     "npm-run-all": "^4.0.1",
-    "nyc": "^10.1.2",
+    "nyc": "^15.1.0",
     "run-default": "^1.0.0",
     "standard": "^8.6.0",
     "tape": "^4.6.3",
